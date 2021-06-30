@@ -9,6 +9,8 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>🤘Rock 🧻Paper ✂Scissors</title>
 </head>
 
@@ -17,13 +19,22 @@
     <h1>Rock Paper Scissors</h1>
   </header>
   <main class="container text-center">
-    <h2>Select an Item</h2>
-
-    <button class="btn-button bg-info m-2" onclick="play('rock')" id="rock">Rock</button>
-    <button class="btn-button bg-success m-2" onclick="play('paper')" id="paper">Paper</button>
-    <button class="btn-button bg-warning m-2" onclick="play('scissors')" id="scissors">Scissors</button>
-
-
+    <div class="row">
+      <div class="col-12 my-3">
+        <h2>Select an Item</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 justify-content-around">
+        <button class="btn-button bg-info m-2" onclick="play(0)" id="rock"><i class="fa fa-diamond fa-5x"
+            aria-hidden="true"></i><br>Rock</br></button>
+        <button class="btn-button bg-success m-2" onclick="play(1)" id="paper">Paper</button>
+        <button class="btn-button bg-warning m-2" onclick="play(2)" id="scissors">Scissors</button>
+      </div>
+    </div>
+    <div class="row">
+      <<img src="" id="c" class="">
+    </div>
   </main>
   <footer class="container-fluid bg-secondary py-2 text-light text-center fixed-bottom">
     <h3>This Game was Brought to you by : Codeworks and Developers like YOU</h3>
