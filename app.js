@@ -1,0 +1,5 @@
+rpsItem = {
+  Rock,
+  Paper,
+  Scissors,
+}
