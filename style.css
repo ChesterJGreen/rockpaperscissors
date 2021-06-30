@@ -5,3 +5,8 @@ body {
   flex-direction: column;
 }
 
+.picturesize {
+  height: 10rem;
+  width: 10rem;
+  }
+
