@@ -8,5 +8,6 @@ body {
 .picturesize {
   height: 10rem;
   width: 10rem;
+  display: none;
   }
 
