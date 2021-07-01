@@ -13,8 +13,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>🤘Rock 🧻Paper ✂Scissors</title>
 </head>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
-<body>
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
   <header class="container-fluid bg-primary text-light text-center py-2">
     <h1>Rock Paper Scissors</h1>
   </header>
@@ -34,6 +51,22 @@
             aria-hidden="true"></i><br>Scissors</br></button>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <h3>Computer Chose:</h3>
+        <h2 id="compfinal"></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 justify-content-around">
+        <button class="btn-button bg-info m-2" id="rockcomp"><i class="fa fa-hand-rock-o fa-5x"
+            aria-hidden="true"></i><br>Rock</br></button>
+        <button class="btn-button bg-success m-2" id="papercomp"><i class="fa fa-hand-paper-o fa-5x"
+            aria-hidden="true"></i><br>Paper</br></button>
+        <button class="btn-button bg-warning m-2" id="scissorscomp"><i class="fa fa-hand-scissors-o fa-5x"
+            aria-hidden="true"></i><br>Scissors</br></button>
+      </div>
+    </div>
     <div class="row justify-content-center">
       <img src="" id="c" class="picturesize">
       <img src="" id="a" class="picturesize">
@@ -42,7 +75,15 @@
     </div>
   </main>
   <footer class="container-fluid bg-secondary py-2 text-light text-center fixed-bottom">
-    <h3>This Game was Brought to you by : Codeworks and Developers like YOU</h3>
+    <div class="row">
+      <div class="col-10">
+        <h4>This Game was Brought to you by : Seej Productions</h4>
+      </div>
+      <div class="col-2" id="winDisplay">
+        <h3></h3>
+      </div>
+    </div>
+
   </footer>
 
 
